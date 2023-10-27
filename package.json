@@ -1,5 +1,18 @@
 {
   "dependencies": {
     "picocolors": "^1.0.0"
-  }
+  },
+  "name": "learning",
+  "description": "",
+  "version": "1.0.0",
+  "main": "1.os-info.js",
+  "devDependencies": {
+    "standard": "^17.1.0"
+  },
+  "scripts": {
+    "test": "standard"
+  },
+  "keywords": [],
+  "author": "mag4no10",
+  "license": "ISC"
 }
