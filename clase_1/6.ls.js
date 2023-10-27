@@ -25,4 +25,4 @@ fs.readdir("./")
     })
     .catch(err => {
         console.error(err);
-    })
+    }) 

@@ -19,7 +19,7 @@ const { readFile } = require("node:fs/promises");
 
 
 /*
-
+ 
 async function init() {
     console.log("Leyendo el primer archivo...") 
     const text = await readFile("./prueba.txt", "utf-8")

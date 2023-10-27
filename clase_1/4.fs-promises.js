@@ -12,4 +12,4 @@ console.log("Leyendo el segundo archivo...")
 fs.readFile("./prueba2.txt", "utf-8")
     .then(text => {
         console.log(text)
-    })
+    }) 

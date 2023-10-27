@@ -6,4 +6,4 @@ Promise.all([
 ]).then(([text, text2]) => {
     console.log("Primer texto: ", text)
     console.log("Segundo texto:" , text2)
-})
+}) 

@@ -22,7 +22,7 @@ async function ls (folder) {
     } catch {
       console.error(`No se pudo leer el archivo ${filePath}`)
       process.exit(1)
-    }
+    } 
 
     const isDirectory = stats.isDirectory()
     const fileType = isDirectory ? 'd' : 'f'

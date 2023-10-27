@@ -14,4 +14,4 @@ const base = path.basename(file_path)
 const base_sin_extension = path.basename(file_path, ".txt")
 
 // extname retorna la extensión del archivo => .txt
-const extension = path.extname(file_path)
+const extension = path.extname(file_path) 

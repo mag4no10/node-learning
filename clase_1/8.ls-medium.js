@@ -18,4 +18,4 @@ fs.readdir(dir)
     })
     .catch(err => {
         console.error(err);
-    })
+    }) 
