@@ -1,3 +1,5 @@
+// can be improven by mapping all files with getData function (parallel programming)
+
 const fs = require("node:fs/promises")
 const process = require("node:process")
 const pc = require('picocolors')
