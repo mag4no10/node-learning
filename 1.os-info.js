@@ -9,4 +9,4 @@ console.log("Arquitectura", os.arch())
 console.log("CPU's" ,os.cpus()) // Vamos a poder escalar procesos en nodejs
 console.log("Memoria libre: ", os.freemem() / (1024*1024))
 console.log("Memoria total: ", os.totalmem() / (1024*1024))
-console.log("Uptime: ", os.uptime() / 3600, "hrs") 
+console.log("Uptime: ", os.uptime() / 3600, "hrs")
