@@ -2,12 +2,29 @@ const http = require('node:http')
 
 const PORT = process.env.PORT ?? 8080
 
-const server = http.createServer((request, response) => {
-  console.log('Request received')
-  response.writeHead(200, { 'Content-Type': 'text/html' })
-  response.write('<p>Hello World</p>')
-  response.end()
-})
+const processRequest = (request, response) => {
+  console.log('Request received', request.url)
+  if (request.url == "/") {
+    response.statusCode = 200
+    response.setHeader("Content-Type", "text/html; charset=utf-8")
+    response.write("<p>Bienvenido a mi página de inicio</p>")
+    response.end()
+  }
+  else if (request.url == "/contacto") {
+    response.statusCode = 200
+    response.setHeader("Content-Type", "text/html; charset=utf-8")
+    response.write("<p>Esto es contacto</p>")
+    response.end()
+  }
+  else {
+    response.statusCode = 404
+    response.setHeader("Content-Type", "text/html; charset=utf-8")
+    response.write("<h1>ERROR 404 NOT FOUND</h1>")
+    response.end()
+  }
+}
+
+const server = http.createServer(processRequest)
 
 server.listen(PORT, '127.0.0.1', () => {
   console.log(`Server is listening in http://localhost:${PORT}`)
