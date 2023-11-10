@@ -20,11 +20,11 @@ n
 ## Types of dependencies
 ### Dependencies
 ```
-Packages that are *REQUIRED* to run the proyect, used in production
+Packages that are **REQUIRED** to run the proyect, used in production
 ```
 ### devDependencies
 ```
-Packages that are *NOT REQUIRED* to run the proyect, that stay in develop phase
+Packages that are **NOT REQUIRED** to run the proyect, that stay in develop phase
 ```
 ### peerDependencies
 ```
