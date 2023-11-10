@@ -1,9 +1,11 @@
 ## Changing node version using fnm 
 ```
 # fnm install XX.X.X
-# fnm alias XX.X.X default #Setting default version
+// Setting default version
+# fnm alias XX.X.X default
 # fnm use XX.X.X
-# eval "$(fnm env --multi)"
+// To add fnm environmental vars
+# eval "$(fnm env --multi)" #
 ```
 ## Changing node version using nvm
 ```
@@ -38,7 +40,7 @@ Installed only in this npm_modules proyect folder
 # npm install packageName
 ```
 ### Development install
-Installed only in this npm_modules proyect folder but are not required in production
+Installed only in this npm_modules proyect folder but are not required in production (local)
 ```
 # npm install -D packageName
 ```
@@ -46,4 +48,9 @@ Installed only in this npm_modules proyect folder but are not required in produc
 Installed in our computer, and used in all node projects
 ```
 # npm install -g packageName
+```
+### Production install
+Installed locally in this npm_modules folder and it's requires in production
+```
+# npm install -E packageName
 ```
